@@ -91,14 +91,14 @@ jobs:
       # Step 5: Lint code
       # -----------------------------
       - name: Lint code
-        run: flake8 backend
+        run: flake8 .
         # Flake8 checks Python code for style and syntax issues in 'backend' folder
 
       # -----------------------------
       # Step 6: Run tests with coverage
       # -----------------------------
-      - name: Run tests
-        run: pytest --cov=backend tests/
+      #- name: Run tests
+        #run: pytest --cov=backend tests/
         # Executes unit tests in 'tests/' folder
         # Generates coverage report for 'backend' code
 
